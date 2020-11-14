@@ -1,0 +1,25 @@
+.card {
+    margin: 2em; /* Temporal, es solo para poder ver bien la carta. */
+    width: 40%;
+    border-radius: 12px;
+    background-image: url(../images/card/maths.jpg);
+    background-size: cover;
+}
+  
+.boton-carta {
+    margin: 0;
+    margin-top: 20%;
+    font-weight: bold;
+}
+  
+.texto-card {
+    color: white;
+    text-shadow: 0px 0px 2px black;
+}
+  
+.fa-chalkboard-teacher,
+.fa-square-root-alt,
+.fa-paper-plane {
+    margin-right: 0.6em;
+    font-size: 85%;
+}
