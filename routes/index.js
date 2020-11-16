@@ -14,4 +14,8 @@ router.get('/perfil', function(req, res, next) {
   res.render('perfil');
 });
 
+router.get('/nav', function(req, res, next) {
+  res.render('partials/nav');
+});
+
 module.exports = router;
