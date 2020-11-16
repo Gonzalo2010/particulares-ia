@@ -10,4 +10,8 @@ router.get('/home', function(req, res, next) {
   res.render('partials/recuadro');
 });
 
+router.get('/perfil', function(req, res, next) {
+  res.render('perfil');
+});
+
 module.exports = router;
