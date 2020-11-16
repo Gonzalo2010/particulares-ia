@@ -10,4 +10,8 @@ router.get('/home', function(req, res, next) {
   res.render('partials/recuadro');
 });
 
+router.get('/nav', function(req, res, next) {
+  res.render('partials/nav');
+});
+
 module.exports = router;
