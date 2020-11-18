@@ -4,7 +4,8 @@
 
 .search-input {
     background-color: #5C5552;
-    width: 20em !important;
+    width: 13em !important;
+    transition: width 0.2s;
 }
 
 .fa-home,
@@ -26,6 +27,7 @@
     background-color: #F7F0F5;
     color: black;
     border-color: #5C5552;
+    width: 20em !important;
 }
 
 .submit-button {
