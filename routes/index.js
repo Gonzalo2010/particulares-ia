@@ -18,4 +18,8 @@ router.get('/nav', function(req, res, next) {
   res.render('partials/nav');
 });
 
+router.get('/footer', function(req, res, next) {
+  res.render('partials/footer');
+});
+
 module.exports = router;

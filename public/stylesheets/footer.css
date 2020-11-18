@@ -1,0 +1,16 @@
+.footer-completo{
+    background-color:#8F857D;
+}
+.footer-copyright{
+    background-color: rgba(0, 0, 0, 0.1)
+}
+footer a{
+    color:#F7F0F5;
+}
+footer a:hover{
+    color:#F7F0F5;
+    text-decoration:none;
+}
+.container-footer{
+    padding-top: 7px;
+}
