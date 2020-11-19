@@ -1,3 +1,9 @@
+.fa-home,
+.fa-paper-plane,
+.fa-question-circle {
+    margin-right: 0.4em;
+}
+
 .navbar {
     background-color: #DECBB7 !important;
 }
@@ -6,11 +12,6 @@
     background-color: #5C5552;
     width: 13em !important;
     transition: width 0.2s;
-}
-
-.fa-home,
-.fa-paper-plane {
-    margin-right: 0.4em;
 }
 
 .search-input::placeholder {
@@ -42,20 +43,25 @@
     border-color: #5C5552;
 }
 
-.navlinks-container,
-.login-container {
-    display: flex;
-    flex-direction: row;
-}
-
-.navbar-nav {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
 .iniciar-sesion:hover {
     background-color: #F7F0F5; 
+    color: black;
+}
+
+.nav-link {
+    color: black;
+}
+
+.nav-link:hover {
+    color: black;
+}
+
+@media screen and (max-width: 991px) {
+    .form-nav {
+        display: none;
+    }
+
+    .iniciar-sesion {
+        margin-top: 0.6em;
+    }
 }
