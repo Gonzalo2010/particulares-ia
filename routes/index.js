@@ -22,4 +22,8 @@ router.get('/footer', function(req, res, next) {
   res.render('partials/footer');
 });
 
+router.get('/contactanos', function(req, res, next) {
+  res.render('partials/contactanos');
+});
+
 module.exports = router;

@@ -1,0 +1,17 @@
+.imagen-contactanos {
+    height: 120px;
+    width: 120px;
+}
+
+.container-contactanos {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100vh;
+    background-color: #DECBB7;
+}
+
+.contactanos-body {
+    background-color: #8F857D;
+}
