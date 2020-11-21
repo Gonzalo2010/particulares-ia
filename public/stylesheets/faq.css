@@ -1,0 +1,21 @@
+.card-header {
+    background-color:#DECBB7;
+}
+
+.texto-faq {
+    opacity: 0.6;
+    transition: opacity 0.1s;
+}
+
+.texto-faq:hover {
+    opacity: 1;
+}
+
+.texto-faq:focus {
+    opacity: 1;
+}
+
+.fa-question {
+    margin-right: 0.4em;
+    color: #433633;
+}

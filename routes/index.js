@@ -26,4 +26,8 @@ router.get('/contactanos', function(req, res, next) {
   res.render('partials/contactanos');
 });
 
+router.get('/faq', function(req, res, next) {
+  res.render('partials/faq');
+});
+
 module.exports = router;
