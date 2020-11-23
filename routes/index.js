@@ -6,28 +6,24 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-router.get('/home', function(req, res, next) {
-  res.render('partials/recuadro');
-});
-
 router.get('/perfil', function(req, res, next) {
   res.render('perfil');
 });
 
-router.get('/nav', function(req, res, next) {
-  res.render('partials/nav');
-});
-
-router.get('/footer', function(req, res, next) {
-  res.render('partials/footer');
-});
-
 router.get('/contactanos', function(req, res, next) {
-  res.render('partials/contactanos');
+  res.render('contactanos');
+});
+
+router.get('/home', function(req, res, next) {
+  res.render('home');
 });
 
 router.get('/faq', function(req, res, next) {
-  res.render('partials/faq');
+  res.render('faq');
+});
+
+router.get('/recuadro', function(req, res, next) {
+  res.render('partials/recuadro');
 });
 
 module.exports = router;
