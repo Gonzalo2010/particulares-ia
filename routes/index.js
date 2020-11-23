@@ -5,12 +5,12 @@ let mainController = require("../controllers/mainController");
 /* GET home page. */
 router.get('/', mainController.index);
 
-router.get('/home', function(req, res, next) {
-  res.render('partials/recuadro');
-});
+router.get('/home', mainController.home);
 
 router.get('/contactanos', mainController.contactanos);
 
 router.get('/faq', mainController.faq);
+
+router.get('/perfil', mainController.perfil);
 
 module.exports = router;
