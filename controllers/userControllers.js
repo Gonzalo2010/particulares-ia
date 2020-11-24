@@ -18,12 +18,6 @@ let userController = {
     },
     store : (req, res, next) =>{
       res.render("users/register");
-<<<<<<< HEAD
-    }, 
-    loginRender : (req, res, next) => {
-      res.render('users/login');
-    }  
-=======
       // ID maximo para reemplazar
       let idMax = 0;
 
@@ -62,7 +56,6 @@ let userController = {
     loginIniciar : (req, res, next) => {
       res.render('users/login');
     } 
->>>>>>> 84aff40456f2400906b5340b7db45178777ae01d
 }
 
 module.exports = userController;
