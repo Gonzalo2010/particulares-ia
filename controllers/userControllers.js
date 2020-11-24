@@ -71,9 +71,9 @@ let userController = {
 
       req.session.usuarioLogueado = buscarUsuario;
 
-/*       if(req.body.recordameLogin != undefined){
+      if(req.body.recordameLogin != undefined){
         res.cookie('recordame', buscarUsuario.email,{ maxAge: 1000*60*60*24*365*3 })
-      } */
+      }
       res.redirect("/home")
     } 
 }
