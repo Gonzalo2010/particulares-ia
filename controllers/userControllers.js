@@ -5,12 +5,12 @@ let userController = {
     create : (req, res, next) =>{
       res.render("users/register");
     },
-/*     store : (req, res, next) =>{
+    store : (req, res, next) =>{
       res.render("users/register");
-    }, */
-/*     loginRender : (req, res, next) => {
+    }, 
+    loginRender : (req, res, next) => {
       res.render('users/login');
-    }  */
+    }  
 }
 
 module.exports = userController;
