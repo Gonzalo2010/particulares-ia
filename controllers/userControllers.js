@@ -60,7 +60,21 @@ let userController = {
       res.render('users/login');
     },
     loginIniciar : (req, res, next) => {
-      res.render('users/login');
+      // Enviar errores express-validator
+      let errores = validationResult(req);
+
+      if (!errores.isEmpty()){
+        return res.render("users/login", {errors : errores.errors})
+      }
+
+      let buscarUsuario = usuariosJson.find(usuario => usuario.email == req.body.email);
+
+      req.session.usuarioLogueado = buscarUsuario;
+
+/*       if(req.body.recordameLogin != undefined){
+        res.cookie('recordame', buscarUsuario.email,{ maxAge: 1000*60*60*24*365*3 })
+      } */
+      res.redirect("/home")
     } 
 }
 
