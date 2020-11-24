@@ -1,6 +1,7 @@
 @import "card.css";
-@import "contactanos.css";
-@import "faq.css";
-@import "footer.css";
-@import "nav.css";
-@import "profile.css";
+@import "__nav.css";
+@import "__contactanos.css";
+@import "__faq.css";
+@import "__footer.css";
+@import '__register-login.css';
+@import '__profile.css';

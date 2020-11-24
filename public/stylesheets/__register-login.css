@@ -1,0 +1,199 @@
+/* ==========================================================================
+   GENERAL -LOGIN-REGISTER
+   ========================================================================== */
+body .login-register{
+    /* Display & Box Model */
+    padding-top: 10rem;
+    padding-bottom: 3%;
+}
+
+/* ==========================================================================
+   TITULO
+   ========================================================================== */
+.login-register-titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.login-register div.login-register-titulo h1 {
+    /* Display & Box Model */
+    margin-top: 1%;
+    margin-bottom: 5%;
+    width: 90%;
+    margin-left: 5%;
+
+    /* Otras */
+    text-align: center;
+}
+
+/* ==========================================================================
+   FORMULARIO CAMPO-INPUT
+   ========================================================================== */
+.login-register form.formulario div.campo-input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+/* ==========================================================================
+   INPUT FORMULARIO
+   ========================================================================== */
+.login-register form.formulario div.campo-input input.input-registro{
+    /* Display & Box Model */
+    margin-bottom: 0;
+    margin-top: 20px;
+    padding-left: 2%;
+    height: 40px;
+    width: 30%;
+
+    /* Otras */
+    border-radius: 5px;
+    border: 0px solid black;
+}
+
+/* ==========================================================================
+   REGISTER - TERMINOS
+   ========================================================================== */
+.login-register form.formulario div.terminos {
+    /* Display & Box Model */
+    width: 100%;
+    margin-top: 20px;
+
+    /* Otras */
+    font-size: small;
+    text-align: center;
+}
+
+.login-register form.formulario div.terminos input#terminos-condiciones {
+    /* Display & Box Model */
+    margin-bottom: 1%;
+
+    /* Otras */
+    background-color: black;
+    color: white;
+}
+
+/* ==========================================================================
+   BUTTON - REGISTER,LOGIN
+   ========================================================================== */
+.login-register form.formulario div.campo-input button.input-button{
+    /* Display & Box Model */
+    padding: 10px;
+    display: block;
+    height: 40px;
+    width: 30%;
+    
+
+    /* Otras */
+    cursor: pointer;
+    opacity: 0.3;
+    background-color: black;
+    border: 0px solid black;
+    font-size: large;
+    border-radius: 5px;
+    color: white;
+}
+
+/* ==========================================================================
+   TEXTO - CONTRASEÑA OLV, USUARIO REGISTRO, INICIO SESION
+   ========================================================================== */
+.login-register form.formulario p.contraseña-olvidada ,
+.login-register p.registrate-usuario ,
+.login-register p.iniciar-sesion{
+    text-align: center;
+}
+
+.login-register p.iniciar-sesion {
+    color: black;
+}
+
+.login-register p.registrate-usuario a,
+.login-register p.iniciar-sesion a{
+    color: #cf9500;
+}
+
+.login-register form.formulario p.contraseña-olvidada a {
+    color: black;
+}
+.login-register form.formulario div.campo-input .error-total,
+.login-register form.formulario div.terminos .error-terminosCondiciones{
+    color: red;
+    font-size: 14px;
+}
+.login-register form.formulario div.campo-input .error-total{
+    margin: 0 auto;
+}
+.login-register form.formulario div.terminos .error-terminosCondiciones{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+
+
+
+/* ==========================================================================
+   RESOLUCION: 768 a 1200
+   ========================================================================== */
+@media (min-width: 768px) and (max-width: 1200px) {
+    /*INPUT FORMULARIO y BUTTON - REGISTER,LOGIN*/
+    .login-register form.formulario div.campo-input input.input-registro, 
+    .login-register form.formulario div.campo-input button.input-button {
+        width: 50%;
+    }
+}
+
+
+/* ==========================================================================
+   RESOLUCION: 480 a 768
+   ========================================================================== */
+@media (max-width: 950px){
+.login-register div.login-register-titulo{
+    margin-top: -55px;
+    }
+}
+
+
+
+
+/* ==========================================================================
+   RESOLUCION: 480 a 768
+   ========================================================================== */
+@media (min-width: 480px) and (max-width: 768px) {
+    .login-register {
+        margin-bottom: 5%;
+    }
+
+    /*INPUT FORMULARIO y BUTTON - REGISTER,LOGIN*/
+    .login-register form.formulario div.campo-input input.input-registro, 
+    .login-register form.formulario div.campo-input button.input-button {
+        width: 75%;
+    }
+}
+
+
+
+
+/* ==========================================================================
+   RESOLUCION: 480 hacia abajo
+   ========================================================================== */
+@media (max-width: 480px) {
+    .login-register {
+        margin-bottom: 5%;
+    }
+
+    /*INPUT FORMULARIO y BUTTON - REGISTER,LOGIN*/
+    .login-register form.formulario div.campo-input input.input-registro, 
+    .login-register form.formulario div.campo-input button.input-button {
+        width: 90%;
+    }
+    .login-register footer{
+        margin-top: 50px;
+    }
+    .login-footer footer{
+        margin-top: 120px;
+    }
+}

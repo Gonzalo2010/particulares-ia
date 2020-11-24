@@ -8,9 +8,6 @@ let mainController = {
     contactanos : function(req, res, next) {
         res.render('contactanos');
       },
-    perfil : function(req, res, next) {
-        res.render('perfil');
-    },
     home : function(req, res, next) {
         res.render('home');
   }
