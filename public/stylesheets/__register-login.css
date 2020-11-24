@@ -17,12 +17,21 @@ body .login-register{
 }
 .login-register div.login-register-titulo h1 {
     /* Display & Box Model */
-    margin-bottom: 5%;
     width: 90%;
     margin-left: 5%;
 
     /* Otras */
     text-align: center;
+}
+
+.container-drawimage {
+    text-align: center;
+}
+
+.draw-image {
+    margin: 1.5em 0em;
+    height: 250px;
+    width: 350px;
 }
 
 /* ==========================================================================
