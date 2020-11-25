@@ -26,23 +26,42 @@
 		
 			<!-- FORMULARIO -->
 			<form class="formulario" action="/users/login" method="POST">
-				
-			<!-- EMAIL -->
-			<div class="campo-input">
-				<input class="input-registro" type="email" id="email" name="email" placeholder="Email">
-			</div>
-
-			<!-- CONTRASEÑA -->
-			<div class="campo-input">
-				<input class="input-registro" type="password" id="contraseña" name="contrasenia" placeholder="Contraseña"> 
-			</div>
-
-			<div class="campo-input">
-				<div class="mt-3">
-					<label for="recordameLogin">Mantener mi sesión iniciada</label>
-					<input type="checkbox" id="recordameLogin" name="recordameLogin">
+	
+				<!-- EMAIL -->
+				<div class="campo-input">
+					<input class="input-registro" type="email" id="email" name="email" placeholder="Email">
+					<%if(typeof errors != "undefined"){%>
+						<% for(let i = 0 ; i < errors.length ; i++){ %>
+							<%if(errors[i].param == "email"){%>
+								<p class="error-total"><%= errors[i].msg %></p>
+								<% break; %>
+							<%}%>
+						<%}%>
+					<%}%>
 				</div>
-			</div>
+	
+				<!-- CONTRASEÑA -->
+				<div class="campo-input">
+					<input class="input-registro" type="password" id="contraseña" name="contrasenia" placeholder="Contraseña"> 
+					<%if(typeof errors != "undefined"){%>
+						<% for(let i = 0 ; i < errors.length ; i++){ %>
+							<% if(errors[i].param == "email") {%>
+								<% break; %>
+							<%}%>
+							<%if(errors[i].param == "contrasenia" ){%>
+								<p class="error-total"><%= errors[i].msg %></p>
+								<% break %>
+							<%}%>
+						<%}%>
+					<%}%>
+				</div>
+	
+				<div class="campo-input">
+					<div>
+						<label for="recordameLogin">Mantener mi sesión iniciada</label>
+						<input type="checkbox" id="recordameLogin" name="recordameLogin">
+					</div>
+				</div>
 				
 			
 			<!-- CONTRASEÑA OLVIDADA -->

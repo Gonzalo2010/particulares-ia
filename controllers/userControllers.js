@@ -1,6 +1,7 @@
 const path = require('path');
 const fs = require('fs');
 const bcrypt = require('bcryptjs');
+const {validationResult} = require("express-validator");
 
 let usuariosJson = fs.readFileSync(path.resolve(__dirname, '../database/usuarios.json'), 'utf-8');
 let dbDirectory = path.resolve(__dirname, '../database/usuarios.json')
@@ -17,7 +18,12 @@ let userController = {
       res.render("users/register");
     },
     store : (req, res, next) =>{
-      res.render("users/register");
+      // Enviar errores express-validator
+      let errores = validationResult(req);
+      if (!errores.isEmpty()){
+        return res.render("users/register", {errors : errores.errors})
+      }
+
       // ID maximo para reemplazar
       let idMax = 0;
 
@@ -48,13 +54,27 @@ let userController = {
       fs.writeFileSync(dbDirectory, JSON.stringify(usuariosJson));
 
       //Te envia a la vista una vez el form fue completado
-      res.redirect("../");
+      res.redirect("/home");
     },
     loginRender : (req, res, next) => {
       res.render('users/login');
     },
     loginIniciar : (req, res, next) => {
-      res.render('users/login');
+      // Enviar errores express-validator
+      let errores = validationResult(req);
+
+      if (!errores.isEmpty()){
+        return res.render("users/login", {errors : errores.errors})
+      }
+
+      let buscarUsuario = usuariosJson.find(usuario => usuario.email == req.body.email);
+
+      req.session.usuarioLogueado = buscarUsuario;
+
+      if(req.body.recordameLogin != undefined){
+        res.cookie('recordame', buscarUsuario.email,{ maxAge: 1000*60*60*24*365*3 })
+      }
+      res.redirect("/home")
     } 
 }
 
