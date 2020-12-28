@@ -1,5 +1,8 @@
-<title>profparticular</title>
-<%- include('../partials/head.ejs') %>
+<!DOCTYPE html>
+<html lang="es">  
+	<head>
+		<title>Regístrate</title>
+		<%- include('../partials/head.ejs') %>
 </head>
 
 <body>
@@ -76,7 +79,7 @@
 			<!-- TERMINOS Y CONDICIONES -->
 			<div class="terminos">
 				<input type="checkbox" id="terminosCondiciones" name="terminosCondiciones">
-				<label for="terminos-condiciones">Acepto los <a href="#">Términos y Condiciones</a> de BierClub </label>
+				<label for="terminos-condiciones">Acepto los <a href="#">Términos y Condiciones</a></label>
 				<%if(typeof errors != "undefined"){%>
 					<%for(let i = 0 ; i < errors.length ; i++){%>
 						<%if(errors[i].param == "terminosCondiciones"){%>
@@ -89,12 +92,12 @@
 			
 			<!-- BOTON REGISTRARSE -->
 			<div class="campo-input">
-				<button class="input-button mt-4" type="submit", id="registrar", value="registrar"> Registrarse </button>
+				<button class="input-button my-4" type="submit", id="registrar", value="registrar"> Registrarse </button>
 			</div>
 			
 			</form>
 			<!-- INICIAR SESION -->
-			<p class="iniciar-sesion">¿Ya sos cliente? <a href="/users/login">Inicia Sesión</a></p>
+			<p class="iniciar-sesion">¿Ya tienes una cuenta?<a href="/users/login" class="ml-2">Inicia Sesión</a></p>
 		</div>
 				<!-- FOOTER -->
 			<footer>
