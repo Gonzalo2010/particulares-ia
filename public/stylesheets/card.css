@@ -1,28 +1,36 @@
 .fa-chalkboard-teacher,
 .fa-square-root-alt,
-.fa-paper-plane,
 .fa-map-marker-alt,
 .fa-star {
     margin-right: 0.6em;
     font-size: 85%;
+    color: rgb(88, 96, 105);
+}
+
+.fa-paper-plane {
+    margin-right: 0.6em;
+    font-size: 85%;
+}
+
+.container-home {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.home-body {
+    background-color: rgb(246, 248, 250);
 }
 
 .image {
-    margin: 2em; /* Temporal, es solo para que se vea bien la carta */
+    margin: 0.8em; /* Temporal, es solo para que se vea bien la carta */
     position: relative;
     width: 300px;
     height: 165px;
     border-radius: 12px;
-}
-
-.imagen-carta {
-    opacity: 0.85;
-}
-
-.image img {
-    width: 100%;
-    vertical-align: top;
-    border-radius: 12px;
+    background-color: white;
+    border: 0.1em solid rgb(225, 228, 232);
+    border-bottom: 0.2em solid rgba(128, 0, 0);
 }
 
 .image:after {
@@ -45,8 +53,7 @@
 .materia,
 .ubicacion,
 .puntaje {
-    color: white;
-    text-shadow: 0px 0px 2px black;
+    color: black;
 }
 
 .nombre {

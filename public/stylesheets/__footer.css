@@ -1,8 +1,11 @@
 .footer-completo{
     background-color:whitesmoke;
+    border-top: 0.1em solid rgb(225, 228, 232);
+    margin-top: 5%;
 }
 .footer-copyright{
-    background-color: wheat;
+    background-color: white;
+    border: 0.1em solid rgb(225, 228, 232);
 }
 footer a{
     color:black;
