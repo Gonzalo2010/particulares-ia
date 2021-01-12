@@ -1,0 +1,28 @@
+.container-contactalo {
+    width: 50%;
+    margin: 0 auto;
+    height: 20em;
+    border-radius: 12px;
+    border: 0.1em solid rgb(225, 228, 232);
+    background-color: white;
+    margin-top: 3em;
+}
+
+.body-contactalo {
+    background-color: rgb(246, 248, 250);
+}
+
+.container-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.tabla-contactalo tr td:nth-of-type(odd) {
+    font-weight: bold;
+}
+
+.container-contactalo .card-header {
+    letter-spacing: 1px;
+    font-size: 1.08em;
+}

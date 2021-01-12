@@ -10,7 +10,10 @@ let mainController = {
       },
     home : function(req, res, next) {
         res.render('home');
-  }
+      },
+    contactalo : function(req, res, next) {
+        res.render('contactalo');
+    }
 }
 
 module.exports = mainController;
