@@ -8,6 +8,7 @@
     background-color: white;
     width: 13em !important;
     transition: width 0.2s;
+    height: 35px;
 }
 
 .search-input::placeholder {

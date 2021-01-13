@@ -18,11 +18,15 @@
     justify-content: space-around;
 }
 
-.tabla-contactalo tr td:nth-of-type(odd) {
+.tabla-contactalo tr td:first-child {
     font-weight: bold;
 }
 
 .container-contactalo .card-header {
+    height: 50px;
     letter-spacing: 1px;
     font-size: 1.08em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
