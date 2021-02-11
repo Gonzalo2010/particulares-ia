@@ -12,7 +12,11 @@ usuariosJson == "" ?
 
 let userController = {
     perfil : (req, res, next) => {
-        res.render('users/perfil');
+        let idUrl = req.params.id
+
+        let usuarioBuscado = usuariosJson.find( usuario => usuario.id == idUrl );
+
+        res.render('users/perfil', { user : usuarioBuscado, userLogged : req.session.usuarioLogueado });
     },
     create : (req, res, next) =>{
       res.render("users/register");
@@ -45,8 +49,18 @@ let userController = {
         apellido: req.body.apellido,
         email : req.body.email,
         contrasenia : bcrypt.hashSync(req.body.contrasenia,10),
+<<<<<<< HEAD
         admin: false,
         profesor: false
+=======
+        redes : {
+          linkedin : "linkedin",
+          twitter : "twitter",
+          instagram : "instagram",
+          facebook : "facebook"
+        },
+        admin: false,
+>>>>>>> c400a3a23160e628e8ea794213f7d039ddb18b34
       }
 
       //Sumar el usuario al array

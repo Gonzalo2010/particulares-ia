@@ -96,5 +96,28 @@
         "email": "patrik@gmail.com",
         "contrasenia": "$2a$10$zYoQ/GUIa/wXWSOCKWasV.KBXGsV37Yzm5BiZLyffbxWnun9hlK0u",
         "admin": false
+<<<<<<< HEAD
+=======
+    },
+    {
+        "id": 15,
+        "nombre": "Evaristo Dantur",
+        "email": "evaristo@dantur.co",
+        "contrasenia": "$2a$10$nSAT4ZEr7BEBlMXM2CsrJe9SWgxlP.83vqZmBo954G2Vlj3oY8nl2",
+        "admin": false
+    },
+    {
+        "id": 16,
+        "nombre": "Evaristo Dantur",
+        "email": "evaristo@dantur.comm",
+        "contrasenia": "$2a$10$2qUoN3FRuC9k2Uh2fiZgG.B0ZJ1eBmNSpusrxUt6kIhqWWINLGiky",
+        "redes": {
+            "linkedin": "JAJALOOOL",
+            "twitter": "twitter",
+            "instagram": "instagram",
+            "facebook": "facebook"
+        },
+        "admin": false
+>>>>>>> c400a3a23160e628e8ea794213f7d039ddb18b34
     }
 ]
