@@ -6,3 +6,5 @@ Se registró el usuario "tobigarreton@gmail.com" -- 2021-1-8 20:06:14
 Se registró el usuario "patrik@gmail.com" -- 2021-1-14 14:35:00
 Se registró el usuario "evaristo@dantur.com" -- 2021-2-11 17:31:21
 Se registró el usuario "evaristo@dantur.co" -- 2021-2-11 17:31:54
+Se registró el usuario "evaristo@dantur.comm" -- 2021-2-11 18:15:35
+Se registró el usuario "evaristo@dantur.comm" -- 2021-2-11 18:19:15

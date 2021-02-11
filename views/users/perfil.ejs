@@ -28,21 +28,37 @@
                       </div>
                       <div class="card mt-3">
                         <ul class="list-group list-group-flush">
+
+                          <% if(user.redes.linkedin != "linkedin"){ %>
                           <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
                             <h6 class="mb-0"><i class="fab fa-linkedin-in"></i> Linkedin</h6>
-                            <span class="text-secondary">evaristodantur</span>
+                            <span class="text-secondary">
+                              <%= user.redes.linkedin %>
+                            <%} %></span>
                           </li>
+
+                          <% if(user.redes.twitter != "twitter"){ %>
                           <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
                             <h6 class="mb-0"><i class="fab fa-twitter"></i> Twitter</h6>
-                            <span class="text-secondary">@evaristodantur</span>
+                            <span class="text-secondary">
+                            <%= user.redes.twitter %>
+                            <%} %></span>
                           </li>
+
+                          <% if(user.redes.instagram != "instagram"){ %>
                           <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
                             <h6 class="mb-0"><i class="fab fa-instagram"></i> Instagram</h6>
-                            <span class="text-secondary">evaristodantur</span>
+                            <span class="text-secondary">
+                              <%= user.redes.twitter %>
+                              <%} %></span>
                           </li>
+
+                          <% if(user.redes.facebook != "facebook"){ %>
                           <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
                             <h6 class="mb-0"><i class="fab fa-facebook-f"></i> Facebook</h6>
-                            <span class="text-secondary">evaristodantur</span>
+                            <span class="text-secondary">
+                            <%= user.redes.facebook %>
+                            <%} %></span>
                           </li>
                         </ul>
                       </div>
@@ -55,7 +71,7 @@
                               <h6 class="mb-0">Nombre completo</h6>
                             </div>
                             <div class="col-sm-9 text-secondary">
-                              Evaristo Dantur
+                              <%= user.nombre %>
                             </div>
                           </div>
                           <hr>
@@ -64,7 +80,7 @@
                               <h6 class="mb-0">Email</h6>
                             </div>
                             <div class="col-sm-9 text-secondary">
-                              evaristodantur@gmail.com
+                              <%= user.email %>
                             </div>
                           </div>
                           <hr>

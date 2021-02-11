@@ -48,7 +48,13 @@ let userController = {
         nombre : req.body.nombre,
         email : req.body.email,
         contrasenia : bcrypt.hashSync(req.body.contrasenia,10),
-        admin: false
+        redes : {
+          linkedin : "linkedin",
+          twitter : "twitter",
+          instagram : "instagram",
+          facebook : "facebook"
+        },
+        admin: false,
       }
 
       //Sumar el usuario al array
