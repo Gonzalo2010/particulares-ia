@@ -42,9 +42,11 @@ let userController = {
       let usuarioNuevo = {
         id : idMax,
         nombre : req.body.nombre,
+        apellido: req.body.apellido,
         email : req.body.email,
         contrasenia : bcrypt.hashSync(req.body.contrasenia,10),
-        admin: false
+        admin: false,
+        profesor: false
       }
 
       //Sumar el usuario al array

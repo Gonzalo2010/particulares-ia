@@ -56,11 +56,23 @@
     padding-left: 2%;
     height: 40px;
     width: 30%;
+    border: none;
+}
 
-    /* Otras */
-    border: 0px solid black;
-    border-bottom: 1px solid black;
-    transition: border-bottom 0.1s ease;
+.input-registro::after {
+    content: '';
+    width: 0%;
+    height: 7px;
+    position: absolute;
+    color: black;
+    bottom: 0%; left: 50%;
+    border-radius: 10px;
+    transition: all 500ms ease;
+}
+
+.input-registro:hover::after {
+    left: 0%;
+    width: 100%;
 }
 
 /* ==========================================================================

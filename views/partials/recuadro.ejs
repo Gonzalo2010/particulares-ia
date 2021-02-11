@@ -1,5 +1,11 @@
   <div class="image">
-    <div class="nombre"><i class="fas fa-chalkboard-teacher"></i>Patricio Scidá</div>
+    <div class="nombre"><i class="fas fa-chalkboard-teacher"></i>Patricio 
+      <% if (typeof userLogged == "undefined") {%>
+        ***
+      <% } else { %>
+        
+      <%}%>
+    </div>
     <div class="materia"><i class="fas fa-square-root-alt"></i>Matemáticas</div>
     <div class="ubicacion"><i class="fas fa-map-marker-alt"></i>Yerba Buena</div>
     <a type="button" class="btn btn-primary contactar btn-sm" href="contactalo"><i class="fas fa-paper-plane"></i>Contáctalo</a>

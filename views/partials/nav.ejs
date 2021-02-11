@@ -23,7 +23,18 @@
               </form>
             </li>
           </ul>
-          <a class="btn btn-outline-secondary iniciar-sesion-nav mr-2" href="/users/login">Iniciar Sesión</a>
+          <a class="btn btn-outline-secondary iniciar-sesion-nav mr-2" href=
+          <%# if(typeof userLogged = "undefined") { %>
+              "/users/login"
+          <%# } else { %>
+              "/users/register"
+          <%# } %>>
+          <%# if(typeof userLogged == "undefined") { %>
+              Iniciar Sesion
+          <%# } else { %>
+              Mi cuenta
+          <%# } %>
+          </a>
           <a class="nav-link" href="/users/register">Regístrate</a>
         </div>
       </nav>

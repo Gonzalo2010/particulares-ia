@@ -25,8 +25,17 @@
 			<form class="formulario" action="/users/register" method="POST">
 				
 			<!-- NOMBRE -->
-			<div class="campo-input">
+			<div class="campo-input nombre-apellido">
 				<input class="input-registro" type="text" id="nombre" name="nombre" placeholder="Nombre">
+				<%if(typeof errors != "undefined"){%>
+					<% for(let i = 0 ; i < errors.length ; i++){ %>
+						<%if(errors[i].param == "nombre"){%>
+							<p class="error-total"><%= errors[i].msg %></p>
+							<% break; %>
+						<%}%>
+					<%}%>
+				<%}%>
+				<input class="input-registro" type="text" id="apellido" name="apellido" placeholder="Apellido">
 				<%if(typeof errors != "undefined"){%>
 					<% for(let i = 0 ; i < errors.length ; i++){ %>
 						<%if(errors[i].param == "nombre"){%>
