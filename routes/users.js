@@ -13,8 +13,8 @@ let perfilOrAdminMiddleware = require("../middlewares/perfilOrAdminMiddleware");
 let guestMiddleware = require('../middlewares/guestMiddleware');                //Middleware de invitado, sin usuario
 
 router.get('/perfil/:id',
-                guestMiddleware, 
-                perfilOrAdminMiddleware,
+/*                 guestMiddleware, 
+                perfilOrAdminMiddleware, */
                                 userController.perfil);
 
 router.get('/register', userController.create);

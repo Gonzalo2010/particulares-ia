@@ -12,7 +12,11 @@ usuariosJson == "" ?
 
 let userController = {
     perfil : (req, res, next) => {
-        res.render('users/perfil');
+        let idUrl = req.params.id
+
+        let usuarioBuscado = usuariosJson.find( usuario => usuario.id == idUrl );
+
+        res.render('users/perfil', { user : usuarioBuscado, userLogged : req.session.usuarioLogueado });
     },
     create : (req, res, next) =>{
       res.render("users/register");
